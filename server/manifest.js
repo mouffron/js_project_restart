@@ -47,11 +47,11 @@ module.exports = new Confidence.Store({
                         knex           : {
                             client     : 'mysql',
                             connection : {
-                                host     : process.env.DB_HOST || '127.0.0.1',
-                                user     : process.env.DB_USER || 'mathias',
-                                port     : process.env.DB_PORT || '3308',
-                                password : process.env.DB_PASSWORD || 'password',
-                                database : process.env.DB_DATABASE || 'user'
+                                host     : process.env.DB_HOST,
+                                user     : process.env.DB_USER,
+                                port     : process.env.DB_PORT,
+                                password : process.env.DB_PASSWORD,
+                                database : process.env.DB_DATABASE
                             }
                         }
                     },
