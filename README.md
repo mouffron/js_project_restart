@@ -3,7 +3,7 @@
 docker run --name hapi-mysql -e MYSQL_USER=user_name -e MYSQL_PASSWORD=password -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=user -d -p 3308:3306 mysql:8 mysqld --default-authentication-plugin=mysql_native_password
 ````
 
-Pensser à renomer le fichier .env-keep en .env et à le remplir avec les bonnes informations
+Pensser à renomer le fichier .env-keep en .env et à le remplir avec les bonnes informations.
 
 ## Lancer le projet:
 ````
@@ -11,8 +11,7 @@ npm start
 ````
 
 ## Pour acceder aux routes qui nescécite d'être authentifier:
-Vous pouvez obtenir un token a partir de la route /user/login
-Un token est valide pendant 4 heures
+Vous pouvez obtenir un token a partir de la route /user/login, un token est valide pendant 4 heures.
 ### Postman:
 dans l'onglet Headers ajouter la key "Authorization" avec la valeur: "Bearer votre_token"  (sans les ")
 ### Swagger:
