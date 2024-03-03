@@ -5,6 +5,11 @@ docker run --name hapi-mysql -e MYSQL_USER=user_name -e MYSQL_PASSWORD=password 
 
 Pensser à renomer le fichier .env-keep en .env et à le remplir avec les bonnes informations
 
+## Lancer le projet:
+````
+npm start
+````
+
 ## Pour acceder aux routes qui nescécite d'être authentifier:
 Vous pouvez obtenir un token a partir de la route /user/login
 Un token est valide pendant 4 heures
@@ -13,7 +18,4 @@ dans l'onglet Headers ajouter la key "Authorization" avec la valeur: "Bearer vot
 ### Swagger:
 Sur /documentation, en haut à droite cliquer sur Authorize et rentrer la valeur : "Bearer votre_token"  (sans les ")
 
-## Lancer le projet:
-````
-npm start
-````
+
