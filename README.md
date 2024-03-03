@@ -14,5 +14,6 @@ dans l'onglet Headers ajouter la key "Authorization" avec la valeur: "Bearer vot
 Sur /documentation, en haut à droite cliquer sur Authorize et rentrer la valeur : "Bearer votre_token"  (sans les ")
 
 ## Lancer le projet:
+````
 npm start
-
+````
